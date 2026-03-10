@@ -5,7 +5,8 @@ import PageContent from './layout/PageContent.jsx';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import ShopPage from "./pages/ShopPage.jsx";
-import ProductDetailPage from "./pages/ProductDetailPage.jsx"; // Yeni eklenen import
+import ProductDetailPage from "./pages/ProductDetailPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx"; // Yeni import
 
 function App() {
   return (
@@ -20,9 +21,12 @@ function App() {
           <Route exact path="/shop">
             <ShopPage />
           </Route>
-          {/* Ürün Detay Rotası: shop/kategori/id/urun-adi formatında */}
           <Route path="/shop/:category/:productId/:productNameSlug">
             <ProductDetailPage />
+          </Route>
+          {/* Yeni İletişim Sayfası Rotası */}
+          <Route path="/contact">
+            <ContactPage />
           </Route>
         </Switch>
       </PageContent>
