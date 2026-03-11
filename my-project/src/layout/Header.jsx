@@ -20,6 +20,7 @@ const Header = () => {
           <Link to="/" className="hover:text-[#23A6F0] transition-colors">Home</Link>
           <Link to="/shop" className="hover:text-[#23A6F0] transition-colors">Shop</Link>
          <Link to="/contact" className="hover:text-[#23A6F0] transition-colors">Contact</Link> 
+        <Link to="/team" className="hover:text-[#23A6F0] transition-colors">Team</Link>
           <Link to="/pages" className="hover:text-[#23A6F0] transition-colors">Pages</Link>
         </nav>
 

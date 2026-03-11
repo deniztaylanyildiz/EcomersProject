@@ -6,7 +6,8 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import ShopPage from "./pages/ShopPage.jsx";
 import ProductDetailPage from "./pages/ProductDetailPage.jsx";
-import ContactPage from "./pages/ContactPage.jsx"; // Yeni import
+import ContactPage from "./pages/ContactPage.jsx";
+import TeamPage from "./pages/TeamPage.jsx"; // Yeni import
 
 function App() {
   return (
@@ -15,19 +16,12 @@ function App() {
       
       <PageContent>
         <Switch>
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/shop">
-            <ShopPage />
-          </Route>
-          <Route path="/shop/:category/:productId/:productNameSlug">
-            <ProductDetailPage />
-          </Route>
-          {/* Yeni İletişim Sayfası Rotası */}
-          <Route path="/contact">
-            <ContactPage />
-          </Route>
+          <Route exact path="/"><HomePage /></Route>
+          <Route exact path="/shop"><ShopPage /></Route>
+          <Route path="/shop/:category/:productId/:productNameSlug"><ProductDetailPage /></Route>
+          <Route path="/contact"><ContactPage /></Route>
+          {/* Yeni Ekip Sayfası Rotası */}
+          <Route path="/team"><TeamPage /></Route>
         </Switch>
       </PageContent>
 
