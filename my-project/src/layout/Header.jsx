@@ -22,6 +22,7 @@ const Header = () => {
          <Link to="/contact" className="hover:text-[#23A6F0] transition-colors">Contact</Link> 
         <Link to="/team" className="hover:text-[#23A6F0] transition-colors">Team</Link>
           <Link to="/pages" className="hover:text-[#23A6F0] transition-colors">Pages</Link>
+          <Link to="/about" className="hover:text-[#23A6F0] transition-colors">About</Link>
         </nav>
 
         {/* Right Section */}

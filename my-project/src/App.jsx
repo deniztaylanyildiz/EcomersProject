@@ -7,7 +7,8 @@ import HomePage from './pages/HomePage.jsx';
 import ShopPage from "./pages/ShopPage.jsx";
 import ProductDetailPage from "./pages/ProductDetailPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
-import TeamPage from "./pages/TeamPage.jsx"; // Yeni import
+import TeamPage from "./pages/TeamPage.jsx";
+import AboutPage from "./pages/AboutPage.jsx"; // Yeni import
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
           <Route exact path="/shop"><ShopPage /></Route>
           <Route path="/shop/:category/:productId/:productNameSlug"><ProductDetailPage /></Route>
           <Route path="/contact"><ContactPage /></Route>
-          {/* Yeni Ekip Sayfası Rotası */}
           <Route path="/team"><TeamPage /></Route>
+          {/* Yeni Hakkımızda Sayfası Rotası */}
+          <Route path="/about"><AboutPage /></Route>
         </Switch>
       </PageContent>
 
